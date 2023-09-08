@@ -1,11 +1,11 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio Version 16
-VisualStudioVersion = 16.0.33130.400
+# Visual Studio Version 17
+VisualStudioVersion = 17.4.33205.214
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Nop.Plugin.Misc.GPTFriend", "Nop.Plugin.Misc.GPTFriend.csproj", "{DBF91101-22A1-4943-8EFC-982B9BB83832}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Nop.Web", "..\..\..\nopCommerce-release-4.50.4\Presentation\Nop.Web\Nop.Web.csproj", "{70BE194C-1938-4D07-BDB6-56BD4152B423}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Nop.Web", "..\..\..\nopCommerce-release-4.50.4\Presentation\Nop.Web\Nop.Web.csproj", "{E1CE7D1D-72BC-4729-895A-C59BF86A2AE0}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -17,10 +17,10 @@ Global
 		{DBF91101-22A1-4943-8EFC-982B9BB83832}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{DBF91101-22A1-4943-8EFC-982B9BB83832}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{DBF91101-22A1-4943-8EFC-982B9BB83832}.Release|Any CPU.Build.0 = Release|Any CPU
-		{70BE194C-1938-4D07-BDB6-56BD4152B423}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{70BE194C-1938-4D07-BDB6-56BD4152B423}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{70BE194C-1938-4D07-BDB6-56BD4152B423}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{70BE194C-1938-4D07-BDB6-56BD4152B423}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E1CE7D1D-72BC-4729-895A-C59BF86A2AE0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E1CE7D1D-72BC-4729-895A-C59BF86A2AE0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E1CE7D1D-72BC-4729-895A-C59BF86A2AE0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E1CE7D1D-72BC-4729-895A-C59BF86A2AE0}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
