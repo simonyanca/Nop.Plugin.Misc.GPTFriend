@@ -5,7 +5,7 @@
     <Copyright>Copyright ©, Ltd</Copyright>
     <Authors>Gerardo Tous</Authors>
     <PackageLicenseUrl></PackageLicenseUrl>
-	  <OutputPath>..\..\..\nopCommerce-release-4.50.4\Presentation\Nop.Web\Plugins\Misc.GPTFriend</OutputPath>
+	  <OutputPath></OutputPath>
     <OutDir>$(OutputPath)</OutDir>
     <CopyLocalLockFileAssemblies>true</CopyLocalLockFileAssemblies>
   </PropertyGroup>
@@ -35,7 +35,7 @@
   </ItemGroup>
 
 	<ItemGroup>
-		<ClearPluginAssemblies Include="$(MSBuildProjectDirectory)\..\..\..\nopCommerce-release-4.50.4\Build\ClearPluginAssemblies.proj" />
+		<ClearPluginAssemblies Include="$(MSBuildProjectDirectory)\..\..\nopCommerce-release-4.50.4\Build\ClearPluginAssemblies.proj" />
 	</ItemGroup>
 
   <ItemGroup>
@@ -51,11 +51,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <PackageReference Include="CsvHelper" Version="30.0.1" />
-  </ItemGroup>
-
-  <ItemGroup>
-    <ProjectReference Include="..\..\..\nopCommerce-release-4.50.4\Presentation\Nop.Web\Nop.Web.csproj" />
+    <ProjectReference Include="..\..\nopCommerce-release-4.50.4\Presentation\Nop.Web\Nop.Web.csproj" />
   </ItemGroup>
 
 
