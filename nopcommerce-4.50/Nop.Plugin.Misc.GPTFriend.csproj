@@ -1,6 +1,12 @@
 <Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
+	<!-- Agregar estos dos tags para que no agrege nada despues de BaseOutputPath -->
+	<AppendTargetFrameworkToOutputPath>false</AppendTargetFrameworkToOutputPath>
+	<AppendRuntimeIdentifierToOutputPath>false</AppendRuntimeIdentifierToOutputPath>
+	<UseCommonOutputDirectory>true</UseCommonOutputDirectory>
+	<IntermediateOutputPath>path</IntermediateOutputPath>
+	
     <TargetFramework>net6.0</TargetFramework>
     <Copyright>Copyright ©, Ltd</Copyright>
     <Authors>Gerardo Tous</Authors>
@@ -56,11 +62,18 @@
     <ProjectReference Include="..\..\nopCommerce-release-4.50.4\Presentation\Nop.Web\Nop.Web.csproj" />
   </ItemGroup>
 
+  <ItemGroup>
+    <Folder Include="Properties\PublishProfiles\" />
+  </ItemGroup>
+
 
   <!-- This target execute after "Build" target -->
   <Target Name="NopTarget" AfterTargets="Build">
     <!-- Delete unnecessary libraries from plugins path -->
     <MSBuild Projects="@(ClearPluginAssemblies)" Properties="PluginPath=$(MSBuildProjectDirectory)\$(OutDir)" Targets="NopClear" />
+  </Target>
+  <Target Name="PostBuild" AfterTargets="PostBuildEvent">
+    <Exec Command="xcopy &quot;D:\Google Drive\GitHub\Nop.Plugin.Misc.GPTFriend\nopcommerce-4.50\bin\Debug\*&quot; &quot;D:\Google Drive\GitHub\nopCommerce-release-4.50.4\Presentation\Nop.Web\Plugins\Misc.GPTFriend\&quot; /h /i /c /k /e /r /y" />
   </Target>
 
 </Project>

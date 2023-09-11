@@ -16,7 +16,6 @@ using System.Text;
 using Nop.Core;
 using Microsoft.AspNetCore.Http;
 using System.IO;
-using Nop.Plugin.Misc.GPTFriend;
 using Nop.Services.Messages;
 using DocumentFormat.OpenXml.EMMA;
 

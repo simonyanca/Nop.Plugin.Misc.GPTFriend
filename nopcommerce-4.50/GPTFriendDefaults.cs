@@ -18,8 +18,6 @@ namespace Nop.Plugin.Misc.GPTFriend
 		/// Gets a plugin system name
 		/// </summary>
 		public static string SystemName => "Misc.GPTFriend";
-
-        public const string RedirectionsRulesStringKey = "Nop.Plugin.Misc.GPTFriend.Redirections.Rules";
-        public static CacheKey RedirectionsRulesCacheKey => new(RedirectionsRulesStringKey);
+		
     }
 }

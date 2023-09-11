@@ -8,7 +8,7 @@ using Nop.Services.Common;
 using Nop.Services.Configuration;
 using Nop.Services.Localization;
 using Nop.Services.Plugins;
-
+using Nop.Web.Framework.Infrastructure;
 
 namespace Nop.Plugin.Misc.GPTFriend
 {   //test advrediredt
@@ -68,7 +68,9 @@ namespace Nop.Plugin.Misc.GPTFriend
 
 		public string GetWidgetViewComponentName(string widgetZone)
 		{
-			return GPTFriendDefaults.TRACKING_VIEW_COMPONENT_NAME;
+            
+
+            return GPTFriendDefaults.TRACKING_VIEW_COMPONENT_NAME;
 		}
 	}
 }
