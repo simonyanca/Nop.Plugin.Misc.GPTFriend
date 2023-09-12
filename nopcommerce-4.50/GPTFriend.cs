@@ -36,8 +36,9 @@ namespace Nop.Plugin.Misc.GPTFriend
 
         public Task<IList<string>> GetWidgetZonesAsync()
         {
-            return Task.FromResult<IList<string>>(new List<string>());
-        }
+			return Task.FromResult<IList<string>>(new List<string> ());
+			//return Task.FromResult<IList<string>>(new List<string> { PublicWidgetZones.ProductDetailsAfterPictures, PublicWidgetZones.SearchBox });
+		}
 
         public override string GetConfigurationPageUrl()
         {

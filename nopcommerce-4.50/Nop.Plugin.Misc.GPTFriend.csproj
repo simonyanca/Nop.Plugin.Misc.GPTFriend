@@ -73,7 +73,7 @@
     <MSBuild Projects="@(ClearPluginAssemblies)" Properties="PluginPath=$(MSBuildProjectDirectory)\$(OutDir)" Targets="NopClear" />
   </Target>
   <Target Name="PostBuild" AfterTargets="PostBuildEvent">
-    <Exec Command="xcopy &quot;D:\Google Drive\GitHub\Nop.Plugin.Misc.GPTFriend\nopcommerce-4.50\bin\Debug\*&quot; &quot;D:\Google Drive\GitHub\nopCommerce-release-4.50.4\Presentation\Nop.Web\Plugins\Misc.GPTFriend\&quot; /h /i /c /k /e /r /y" />
+    <Exec Command="xcopy &quot;bin\Debug\*&quot; &quot;..\..\nopCommerce-release-4.50.4\Presentation\Nop.Web\Plugins\Misc.GPTFriend&quot; /h /i /c /k /e /r /y" />
   </Target>
 
 </Project>
